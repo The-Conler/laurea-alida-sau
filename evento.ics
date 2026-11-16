@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CONLER Studio//Laurea Alida Sau//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:laurea-alida-sau-2026-12-18@conler.studio
+DTSTAMP:20261116T215000Z
+DTSTART:20261218T193000Z
+DTEND:20261218T223000Z
+SUMMARY:Laurea di Alida Sau
+LOCATION:Ristorante Gli Asfodeli, Via Su Nuratze 41, 08039 Tonara (NU)
+DESCRIPTION:Festa di laurea di Alida Sau presso il Ristorante Gli Asfodeli, a Tonara.
+END:VEVENT
+END:VCALENDAR

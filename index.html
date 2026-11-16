@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Laurea di Alida Sau · 18 dicembre</title>
+  <meta name="description" content="Ti aspetto venerdì 18 dicembre alle 20:30 presso il Ristorante Gli Asfodeli, a Tonara, per festeggiare insieme la mia laurea.">
+  <meta property="og:title" content="Laurea di Alida Sau · 18 dicembre">
+  <meta property="og:description" content="Ti aspetto venerdì 18 dicembre alle 20:30 presso il Ristorante Gli Asfodeli, a Tonara.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://the-conler.github.io/laurea-alida-sau/">
+  <meta property="og:image" content="https://the-conler.github.io/laurea-alida-sau/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Laurea di Alida Sau · 18 dicembre">
+  <meta name="twitter:description" content="Ti aspetto venerdì 18 dicembre alle 20:30 presso il Ristorante Gli Asfodeli, a Tonara.">
+  <meta name="twitter:image" content="https://the-conler.github.io/laurea-alida-sau/og-image.png">
+  <meta name="theme-color" content="#F6F1EB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F6F1EB;
+      --ink: #111111;
+      --muted: #8A8884;
+      --fuchsia: #E0217A;
+      --card: rgba(255, 255, 255, 0.62);
+      --line: rgba(0, 0, 0, 0.08);
+      --pill-off: #E8E6E3;
+      --field: #FFFFFF;
+      --danger: #C2410C;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      padding: calc(28px + env(safe-area-inset-top)) 24px calc(40px + env(safe-area-inset-bottom));
+    }
+
+    .page {
+      width: 100%;
+      max-width: 430px;
+      margin: 0 auto;
+    }
+
+    .label {
+      color: var(--fuchsia);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 12px 0 28px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 12vw, 56px);
+      font-weight: 700;
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+      margin-bottom: 18px;
+    }
+
+    .lede {
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background: var(--card);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 28px;
+      padding: 8px 22px;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 10px 30px rgba(0,0,0,0.035);
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+    }
+
+    .row + .row {
+      border-top: 1px solid var(--line);
+    }
+
+    .row dt {
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .row dd {
+      font-size: 17px;
+      font-weight: 400;
+      color: #3A3A3A;
+      text-align: right;
+      letter-spacing: -0.02em;
+    }
+
+    .row a {
+      color: #3A3A3A;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.18);
+    }
+
+    .row a:hover { color: var(--fuchsia); border-bottom-color: var(--fuchsia); }
+
+    .cal {
+      display: inline-block;
+      margin: 16px 4px 28px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .cal:hover { color: var(--fuchsia); }
+
+    .note {
+      font-size: 15px;
+      line-height: 1.45;
+      color: #6B6966;
+      letter-spacing: -0.015em;
+      margin-bottom: 28px;
+    }
+
+    form { display: block; }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      appearance: none;
+      border: none;
+      background: var(--field);
+      border-radius: 18px;
+      padding: 18px 20px;
+      font: inherit;
+      font-size: 17px;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 88px;
+      resize: vertical;
+      margin-top: 12px;
+    }
+
+    input::placeholder,
+    textarea::placeholder { color: #B0AEAA; }
+
+    input:focus,
+    textarea:focus { box-shadow: 0 0 0 2px rgba(224, 33, 122, 0.28); }
+
+    .hp { position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .actions button {
+      flex: 1;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-radius: 999px;
+      padding: 16px 12px;
+      transition: transform 0.12s ease, opacity 0.12s ease;
+    }
+
+    .actions button:active { transform: scale(0.98); }
+    .actions button:disabled { opacity: 0.6; cursor: default; }
+
+    .btn-yes {
+      background: var(--fuchsia);
+      color: #fff;
+    }
+
+    .btn-no {
+      background: var(--pill-off);
+      color: #1A1A1A;
+    }
+
+    .error {
+      display: none;
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--danger);
+    }
+
+    .error.show { display: block; }
+
+    .thanks {
+      display: none;
+      padding: 8px 0 12px;
+    }
+
+    .thanks h2 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.045em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .thanks p {
+      font-size: 18px;
+      color: var(--muted);
+      letter-spacing: -0.025em;
+      line-height: 1.35;
+    }
+
+    .page.is-thanks #rsvp-form,
+    .page.is-thanks .note { display: none; }
+    .page.is-thanks .thanks { display: block; }
+  </style>
+</head>
+<body>
+  <main class="page" id="page">
+    <p class="label">Laurea 2026</p>
+    <h1 id="headline"></h1>
+    <p class="lede">Ti aspetto per festeggiare insieme la mia laurea.</p>
+
+    <dl class="card">
+      <div class="row">
+        <dt>Data</dt>
+        <dd>Venerdì 18 dicembre 2026</dd>
+      </div>
+      <div class="row">
+        <dt>Ora</dt>
+        <dd>20:30</dd>
+      </div>
+      <div class="row">
+        <dt>Luogo</dt>
+        <dd>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ristorante%20Gli%20Asfodeli%2C%20Via%20Su%20Nuratze%2041%2C%2008039%20Tonara" target="_blank" rel="noopener">Ristorante Gli Asfodeli, Tonara</a>
+        </dd>
+      </div>
+    </dl>
+
+    <a class="cal" href="evento.ics">Aggiungi al calendario</a>
+
+    <p class="note">Ti chiedo gentilmente di confermarmi la tua presenza e di segnalarmi eventuali allergie o intolleranze alimentari, così da poter organizzare tutto al meglio. Non vedo l’ora di festeggiare insieme!</p>
+
+    <form id="rsvp-form" novalidate>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="sr-only" for="nome" style="position:absolute;left:-9999px">Il tuo nome</label>
+      <input id="nome" name="nome" type="text" placeholder="Il tuo nome" autocomplete="name" required maxlength="80">
+      <label class="sr-only" for="allergie" style="position:absolute;left:-9999px">Allergie o intolleranze</label>
+      <textarea id="allergie" name="allergie" placeholder="Allergie o intolleranze (facoltativo)" maxlength="400"></textarea>
+      <div class="actions">
+        <button type="submit" class="btn-yes" data-presenza="Ci sarò">Ci sarò</button>
+        <button type="submit" class="btn-no" data-presenza="Non ci sarò">Non ci sarò</button>
+      </div>
+      <p class="error" id="error" role="alert"></p>
+    </form>
+
+    <div class="thanks" id="thanks" aria-live="polite">
+      <h2 id="thanks-title">Grazie.</h2>
+      <p id="thanks-body">Ho ricevuto la tua conferma.</p>
+    </div>
+  </main>
+
+  <script>
+    /* Cambia solo questa riga per aggiornare nome, titolo e anteprima. */
+    const GRADUATE_NAME = "Alida Sau";
+
+    const RSVP_ENDPOINT = "https://hook.eu1.make.com/96m41vdohfcaeoxqcl1gtunpsuo48mb9";
+
+    const headline = document.getElementById("headline");
+    headline.textContent = GRADUATE_NAME + ".";
+
+    const pageTitle = "Laurea di " + GRADUATE_NAME + " · 18 dicembre";
+    document.title = pageTitle;
+    const og = document.querySelector('meta[property="og:title"]');
+    const tw = document.querySelector('meta[name="twitter:title"]');
+    if (og) og.setAttribute("content", pageTitle);
+    if (tw) tw.setAttribute("content", pageTitle);
+
+    const form = document.getElementById("rsvp-form");
+    const errorEl = document.getElementById("error");
+    const page = document.getElementById("page");
+    let scelta = "Ci sarò";
+
+    form.querySelectorAll("button[data-presenza]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        scelta = btn.getAttribute("data-presenza");
+      });
+    });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      errorEl.classList.remove("show");
+
+      const nome = document.getElementById("nome").value.trim();
+      const allergie = document.getElementById("allergie").value.trim();
+      const honeypot = form.website.value;
+
+      if (!nome) {
+        errorEl.textContent = "Scrivi il tuo nome per confermare.";
+        errorEl.classList.add("show");
+        document.getElementById("nome").focus();
+        return;
+      }
+
+      const buttons = form.querySelectorAll("button");
+      buttons.forEach((b) => { b.disabled = true; });
+
+      try {
+        if (honeypot) {
+          showThanks(nome, scelta);
+          return;
+        }
+
+        const res = await fetch(RSVP_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ nome, presenza: scelta, allergie })
+        });
+
+        if (!res.ok) throw new Error("bad status");
+        showThanks(nome, scelta);
+      } catch (err) {
+        errorEl.textContent = "Qualcosa non ha funzionato. Riprova tra un attimo.";
+        errorEl.classList.add("show");
+        buttons.forEach((b) => { b.disabled = false; });
+      }
+    });
+
+    function showThanks(nome, presenza) {
+      const first = nome.split(/\s+/)[0];
+      document.getElementById("thanks-title").textContent = "Grazie, " + first + ".";
+      document.getElementById("thanks-body").textContent =
+        presenza === "Ci sarò"
+          ? "Ho ricevuto la tua conferma. Non vedo l’ora di festeggiare insieme."
+          : "Ho ricevuto la tua risposta. Grazie per avermelo fatto sapere.";
+      page.classList.add("is-thanks");
+    }
+  </script>
+</body>
+</html>
